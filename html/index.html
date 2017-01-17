@@ -13,11 +13,15 @@ and open the template in the editor.
         <script src="../js/LatLong.js"></script>
     </head>
     <body>
-        <input type="text" name="lat" id="lat" placeholder="latitude" required>
-        <input type="text" name="lng" id="lng" placeholder="longitude" required>
-        <input type="text" name="rad" id="rad" placeholder="radius" required>
+        <input type="text" name="address" id="address" value="9600 College Way N">
+        <input type="button" id="geocode" value="Geocode">
+        
+        <input type="text" name="lat" id="lat" placeholder="latitude">
+        <input type="text" name="lng" id="lng" placeholder="longitude">
+        <input type="text" name="rad" id="rad" placeholder="radius" >
         <input type="button" id="json" value="Find Places Around You" /><br>
         <div id="output"></div>
         <div id="number"></div>
     </body>
+
 </html>
