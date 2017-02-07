@@ -10,18 +10,23 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="../js/LatLong.js"></script>
+        <script src="../js/culture.js"></script>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+            }
+        </style>
     </head>
     <body>
         <input type="text" name="address" id="address" value="9600 College Way N">
-        <input type="button" id="geocode" value="Geocode">
-        
+        <input type="button" id="geocode" onclick="geocodeAddress()" value="Geocode">
+
         <input type="text" name="lat" id="lat" placeholder="latitude">
         <input type="text" name="lng" id="lng" placeholder="longitude">
         <input type="text" name="rad" id="rad" placeholder="radius" >
-        <input type="button" id="json" value="Find Places Around You" /><br>
+        <input type="button" id="json" onclick="getCultureData()" value="Find Places Around You" />
         <div id="output"></div>
-        <div id="number"></div>
+        <div id="art"></div>
     </body>
 
 </html>
